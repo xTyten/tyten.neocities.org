@@ -1,0 +1,244 @@
+:root {
+  --black: #101012;
+  --green: #37F7BA;
+  --red: #FF051E;
+  --purple: #524A8A;
+  --white: #F8F8F8;
+}
+
+body {
+  background-image: URL("images/SMT3_title_screen.png");
+  background-size: cover; /* Scales image to cover the entire screen */
+  background-repeat: no-repeat; /* Stops the image from repeating */
+  background-position: center;
+  background-color: var(--black); /* Backup if image doesn't load */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-family: 'Zen Kaku Gothic Antique', Arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0;
+}
+
+p {
+  margin: 0 0;
+  font-size: 20px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--red);
+}
+a:hover {
+  color: var(--green);
+}
+/* a:visited {
+  color: var(--green);
+} */
+a:active {
+  color: #9f97d2;
+}
+
+.styledBox {
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 4px var(--green); /* Type of shadow, offset-x, offset-y, blur-radius, spread-radius, color */
+  z-index: 0;
+}
+#centerContent.styledBox::before { /* adds additional left borderline */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 4px;
+  background: var(--green);
+  z-index: 2; /* Above magatama */
+  pointer-events: none; /* Don't block interaction */
+}
+
+#mainDiv {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 1000px;
+  background-color: rgba(16, 16, 18, 0.8);
+  padding: 16px;
+  margin: 120px auto; /* 80px vertical spacing, horizontal center */
+}
+
+#heroDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 31px; /* vertical, horizontal */
+}
+
+#contentDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#leftContent, #rightContent {
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+}
+
+#profilePic {
+  padding: 12px;
+  margin: 0;
+}
+
+#smtRadio {
+  width: 200px;
+  height: 200px;
+}
+
+#rightContent {
+  margin: 0px;
+  padding: 0px;
+}
+
+#pressTurns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: -4px;
+  padding: 24px;
+}
+
+#moonPhase {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  padding: 24px;
+}
+
+.label {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+}
+
+#myLinks {
+  height: 192px;
+}
+
+.linksBattle {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--white);
+  text-shadow: -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px  1px 0 var(--purple), 1px  1px 0 var(--purple);
+}
+
+#linkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 16px;
+  padding-top: 37px;
+}
+
+hr.fightLine {
+  border: none;
+  height: 2px;
+  background-color: var(--black);
+  margin: 0 0;
+  width: 180px;
+}
+hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--white);
+  padding: 0 0;
+  margin: 0;
+}
+
+#verticalLine {
+  position: absolute;
+  width: 4px;
+  height: 149px;
+  background-color: var(--purple);
+  border-radius: 8px 8px 0 0;
+  top: 39px;
+  left: 10px;
+}
+
+#smtRadio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+#centerContent {
+  width: 552px;
+  height: 400px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+#hobbyDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#vein {
+  position: absolute;
+  right: 4px;
+  bottom: 16px;
+  width: 544px;
+}
+
+#magatama {
+  position: absolute;
+  left: -64px;
+  bottom: 60px;
+  width: 245px;
+  z-index: 1;
+}
+
+#chat {
+  height: 192px;
+}
+#cbox {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+}
