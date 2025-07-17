@@ -102,5 +102,128 @@
       </div>
     </div>
   </div>
+  
+  <div id="app" style="padding-top: 120px;">></div>
+
+  <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    const webamp = new Webamp({
+      initialSkin: {
+        url: "music/SMTIII.wsz",
+        name: "SMT III"
+      },
+      windowLayout: {
+        main: {
+          position: { top: 0, left: 0 },
+          closed: false,
+        },
+        equalizer: {
+          position: { top: 0, left: 274 },
+          closed: false,
+        },
+        playlist: {
+          position: { top: 0, left: 274 + 274 },
+          closed: false,
+        },
+      },
+      initialTracks: [
+        {
+          metaData: {
+            title: "Forced battle (SMTIII)",
+            artist: "Shoji Meguro",
+          },
+          url: "music/SMTIII-Forced battle.mp3"
+        },
+        {
+          metaData: {
+            title: "Battle A2 (SMTIV)",
+            artist: "Ryota Kozuka",
+          },
+          url: "music/SMTIV-Battle - a2.mp3"
+        },
+        {
+          metaData: {
+            title: "Unfinished Battle (XC)",
+            artist: "Yoko Shimomura",
+          },
+          url: "music/XCO-Unfinished Battle.mp3"
+        },
+        {
+          metaData: {
+            title: "So nah, so fern (XCX)",
+            artist: "Mika Kobayashi",
+          },
+          url: "music/XCX-So nah, so fern.mp3"
+        },
+        {
+          metaData: {
+            title: "This Dream (NieR Replicant)",
+            artist: "Shotaro Seo",
+          },
+          url: "music/NieR Replicant-This Dream.mp3"
+        },
+        {
+          metaData: {
+            title: "Hybrid [New Born] (TWEWY) ",
+            artist: "Takeharu Ishimoto",
+          },
+          url: "music/TWEWY-Hybrid (New Born).mp3"
+        },
+        {
+          metaData: {
+            title: "Sorrow's Distortion (CV: OoE)",
+            artist: "Yasuhiro Ichihashi",
+          },
+          url: "music/CV OoE-Sorrow's Distortion.mp3"
+        },
+        {
+          metaData: {
+            title: "In the Arms of Death (GGXX)",
+            artist: "N.EX.T",
+          },
+          url: "music/GG-In the Arms of Death (Testament's Theme).mp3"
+        },
+        {
+          metaData: {
+            title: "Miku Miku ☆ Summer Night Fantasy",
+            artist: "samfree",
+          },
+          url: "music/samfree-Miku Miku Summer Night Fantasy.mp3"
+        },
+        {
+          metaData: {
+            title: "Fly Like A Butterfly (JSRF) ",
+            artist: "Hideki Naganuma",
+          },
+          url: "music/JSRF-Fly Like A Butterfly.mp3"
+        },
+        {
+          metaData: {
+            title: "Aoko Aozaki (Mahoyo) ",
+            artist: "Hideyuki Fukusawa",
+          },
+          url: "music/Mahoyo-Aoko Aozaki.mp3"
+        },
+        {
+          metaData: {
+            title: "Menu (Sin & Punishment SS) ",
+            artist: "Norio Hanzawa",
+          },
+          url: "music/Sin&PunishmentSS-Menu.mp3"
+        },
+        {
+          metaData: {
+            title: "I Sawed the Demons (DOOM) ",
+            artist: "Bobby Prince",
+          },
+          url: "music/DOOM-E2M1 I Sawed the Demons.mp3"
+        },
+      ]
+    });
+
+    webamp.renderWhenReady(document.getElementById("app"));
+    
+  </script>
+
 </body>
 </html>
