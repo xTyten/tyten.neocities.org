@@ -4,6 +4,7 @@
   --red: #FF051E;
   --purple: #524A8A;
   --white: #F8F8F8;
+  cursor: url("images/jack_frost_cursor.png"), auto;
 }
 
 body {
@@ -17,6 +18,12 @@ body {
   padding: 0;
   color: var(--white);
   font-family: 'Zen Kaku Gothic Antique', Arial, sans-serif;
+}
+button:hover {
+  cursor: url("images/jack_frost_cursor_point.png"), auto;
+}
+a:hover {
+  cursor: url("images/jack_frost_cursor_point.png"), auto;
 }
 
 h2 {
@@ -241,4 +248,14 @@ hr {
   position: absolute;
   left: 4px;
   bottom: 4px;
+}
+
+.hoveredPicture {
+  display: none;
+}
+.pictureHover:hover .unhoveredPicture{
+  display: none;
+}
+.pictureHover:hover .hoveredPicture{
+  display: block;
 }
