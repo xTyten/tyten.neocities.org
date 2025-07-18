@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TYTEN</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="winampSkin.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -108,10 +109,10 @@
   <script type="module">
     import Webamp from "https://unpkg.com/webamp@^2";
     const webamp = new Webamp({
-      initialSkin: {
-        url: "music/SMTIII.wsz",
-        name: "SMT III"
-      },
+      // initialSkin: {
+      //   url: "music/SMTIII.wsz",
+      //   name: "SMT III"
+      // },
       windowLayout: {
         main: {
           position: { top: 0, left: 0 },
@@ -224,6 +225,123 @@
     webamp.renderWhenReady(document.getElementById("app"));
     
   </script>
+  <link rel="stylesheet" href="winampSkin.css"/>
+
+  <!-- <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    const webamp = new Webamp({
+      windowLayout: {
+        main: {
+          position: { top: 0, left: 0 },
+          closed: false,
+        },
+        equalizer: {
+          position: { top: 0, left: 274 },
+          closed: false,
+        },
+        playlist: {
+          position: { top: 0, left: 274 + 274 },
+          closed: false,
+        },
+      },
+      initialTracks: [
+        {
+          metaData: {
+            title: "Forced battle (SMTIII)",
+            artist: "Shoji Meguro",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/SMTIII-Forced%20battle.mp3"
+        },
+        {
+          metaData: {
+            title: "Battle A2 (SMTIV)",
+            artist: "Ryota Kozuka",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/SMTIV-Battle%20-%20a2.mp3"
+        },
+        {
+          metaData: {
+            title: "Unfinished Battle (XC)",
+            artist: "Yoko Shimomura",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/XCO-Unfinished%20Battle.mp3"
+        },
+        {
+          metaData: {
+            title: "So nah, so fern (XCX)",
+            artist: "Mika Kobayashi",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/XCX-So%20nah,%20so%20fern.mp3"
+        },
+        {
+          metaData: {
+            title: "This Dream (NieR Replicant)",
+            artist: "Shotaro Seo",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/NieR%20Replicant-This%20Dream.mp3"
+        },
+        {
+          metaData: {
+            title: "Hybrid [New Born] (TWEWY) ",
+            artist: "Takeharu Ishimoto",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/TWEWY-Hybrid%20(New%20Born).mp3"
+        },
+        {
+          metaData: {
+            title: "Sorrow's Distortion (CV: OoE)",
+            artist: "Yasuhiro Ichihashi",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/CV%20OoE-Sorrow's%20Distortion.mp3"
+        },
+        {
+          metaData: {
+            title: "In the Arms of Death (GGXX)",
+            artist: "N.EX.T",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/GG-In%20the%20Arms%20of%20Death%20(Testament's%20Theme).mp3"
+        },
+        {
+          metaData: {
+            title: "Miku Miku ☆ Summer Night Fantasy",
+            artist: "samfree",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/samfree-Miku%20Miku%20Summer%20Night%20Fantasy.mp3"
+        },
+        {
+          metaData: {
+            title: "Fly Like A Butterfly (JSRF) ",
+            artist: "Hideki Naganuma",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/JSRF-Fly%20Like%20A%20Butterfly.mp3"
+        },
+        {
+          metaData: {
+            title: "Aoko Aozaki (Mahoyo) ",
+            artist: "Hideyuki Fukusawa",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/Mahoyo-Aoko%20Aozaki.mp3"
+        },
+        {
+          metaData: {
+            title: "Menu (Sin & Punishment SS) ",
+            artist: "Norio Hanzawa",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/Sin&PunishmentSS-Menu.mp3"
+        },
+        {
+          metaData: {
+            title: "I Sawed the Demons (DOOM) ",
+            artist: "Bobby Prince",
+          },
+          url: "https://raw.githubusercontent.com/xTyten/tyten.neocities.org/main/music/DOOM-E2M1%20I%20Sawed%20the%20Demons.mp3"
+        },
+      ]
+    });
+
+    webamp.renderWhenReady(document.getElementById("app"));
+    
+  </script> -->
 
 </body>
 </html>
